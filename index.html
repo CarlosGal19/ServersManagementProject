@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            To Do List in Docker
+        </h1>
+    </header>
+    <main>
+        <aside>
+            <form>
+                <h2>
+                    Add Task
+                </h2>
+                <div class="form_item">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="form_item">
+                    <label for="description">Description</label>
+                    <textarea type="" name="description" id="description" required maxlength="254"></textarea>
+                </div>
+                <div class="form_item">
+                    <label for="importance">Importance</label>
+                    <select name="importance" id="importance" required>
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="status">Status</label>
+                    <select name="status" id="status" required>
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="to_do">To Do</option>
+                        <option value="doing">Doing</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+                <button id="cancel_button" type="reset">Cancel</button>
+                <button id="submit_button" type="submit">Add</button>
+            </form>
+        </aside>
+        <section>
+            <article id="article_to_do">
+                <h2>
+                    To do
+                </h2>
+                <div id="tasks_to_do">
+                </div>
+            </article>
+            <article id="article_doing">
+                <h2>
+                    Doing
+                </h2>
+                <div id="tasks_doing">
+
+                </div>
+            </article>
+            <article id="article_done">
+                <h2>
+                    Done
+                </h2>
+                <div id="tasks_done">
+
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        © 2025 Carlos Galindo. All rights reserved.
+    </footer>
+</body>
+</html>

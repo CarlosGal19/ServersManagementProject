@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #2D6073, #1F192F);
+    color: #F0F7DA;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 12ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #00000066;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 30%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+section {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+input,
+textarea {
+    padding: 10px 16px;
+    border: 1px solid #F0F7DA;
+    background-color: transparent;
+    color: #F0F7DA;
+    border-radius: 16px;
+    font-size: 1em;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 1em;
+}
+
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+option:hover,
+option:focus {
+    background: #F0F7DA;
+}
+
+#cancel_button {
+    border: 1px solid #F0F7DA;
+    background-color: #2D6073;
+    color: #F0F7DA;
+    margin: 1rem 1rem 0 1rem;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#cancel_button:hover {
+    background-color: #3b7a8a;
+}
+
+#submit_button {
+    border: 1px solid #1F192F;
+    background-color: #F0F7DA;
+    color: #2D6073;
+    margin: 1rem;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#submit_button:hover {
+    background-color: #dfeccc;
+}
+
+button {
+    cursor: pointer;
+}
+
+section article {
+    width: 30%;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+section article>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #1F192F;
+}
+
+section article>h2 {
+    margin: 0;
+    padding: 0 0 8px 0;
+    color: #F0F7DA;
+}
+
+section article>div {
+    padding: 4px;
+    border-radius: 8px;
+}
+
+section article div > p {
+    font-size: small;
+    text-align: justify;
+    color: #F0F7DA;
+    white-space: normal;
+    padding: 0 8px 0 8px;
+    overflow-wrap: break-word;
+}
+
+section article div>h3 {
+    padding: 4px 0 0 4px;
+    margin: 0;
+    color: #F0F7DA;
+}
+
+.action_buttons>button {
+    background-color: transparent;
+    border: 0;
+    font-size: 24px;
+}
+
+.to_do span,
+.doing span,
+.done span {
+    padding: 4px 12px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.high {
+    background-color: #FB2C36;
+}
+
+.medium {
+    background-color: #D0872E;
+}
+
+.low {
+    background-color: #7CCF35;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: small;
+    color: #ccc;
+}
+
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+
+    .form_item {
+        padding: 0 6rem 0 6rem;
+    }
+
+    #cancel_button {
+        margin: 0 6rem 0 6rem;
+    }
+
+    #submit_button {
+        margin: 0 6rem 0 6rem;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: auto;
+    }
+}
